@@ -3,7 +3,7 @@
  */
 import Vue from 'vue';
 import Router from 'vue-router';
-import routes from '../framework/Routes';
+import routes from '../allRoutes';
 
 
 
@@ -11,7 +11,7 @@ Vue.use(Router);
 
 
 const router = new Router({
-    // mode: 'history',
+    mode: 'history',
     routes
     // scrollBehavior(to, from, savedPosition) {
     //    if (savedPosition) {
