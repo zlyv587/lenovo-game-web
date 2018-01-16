@@ -1,0 +1,87 @@
+@import "../../common/base.less";
+.part {
+  margin: 0 auto;
+  .px2rem(height, 325);
+  .px2rem(width, 958);
+  .px2rem(padding-bottom,10);
+  background: blue;
+  box-sizing: border-box;
+  .px2rem(font-size, 12);
+  p{
+    margin: 0;
+  }
+  .left-part {
+    .px2rem(height, 325);
+    .px2rem(width, 704);
+    background: #fff;
+    float:left;
+    //padding: 0 15px 0 20px;
+    .px2rem(padding-right, 15);
+    .px2rem(padding-left, 20);
+    .banner{
+      width: 100%;
+      .px2rem(margin-bottom, 8);
+      box-sizing: border-box;
+      i{
+        display: block;
+        width: 4px;
+        height: 15px;
+        background-color: #0063ff;
+        float: left;
+        margin-right: 12px;
+        .px2rem(margin-left, 10);
+      }
+      p:nth-child(2){
+        float: left;
+      }
+      p:nth-child(3){
+        float: right;
+      }
+      div{
+        clear: both;
+      }
+    }
+    ul{
+      width: 100%;
+      display: flex;
+      flex-flow: wrap;
+      margin-top: 0;
+      li{
+        .px2rem(height, 140);
+        .px2rem(width, 213);
+        //float: left;
+        //margin: 0 0 10px 10px;
+        .px2rem(margin-bottom, 10);
+        .px2rem(margin-left, 10);
+        position: relative;
+
+        div{
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          .px2rem(height, 32);
+          .px2rem(line-height, 32);
+          color: #fff;
+          background-color: rgba(0,0,0,0.7);
+          p{
+            .px2rem(margin-left, 10);
+          }
+        }
+      }
+      div{
+        clear: both;
+      }
+    }
+  }
+  .right-part {
+    .px2rem(height, 325);
+    .px2rem(width, 254);
+    background: green;
+    float:left;
+    .px2rem(padding-left, 10);
+    .px2rem(padding-right, 30);
+    div{
+
+    }
+  }
+}
