@@ -9,33 +9,63 @@
             </div>
             <ul>
                 <li>
-                    <div>
+                    <div class="cover-bottom">
                         <p>阿超最强女主播开团</p>
+                    </div>
+                    <div class="cover-all">
+                        <p>贪玩蓝月</p>
+                        <p>一刀999级，不删档内测</p>
+                        <span>立即下载</span>
                     </div>
                 </li>
                 <li>
-                    <div>
+                    <div class="cover-bottom">
                         <p>阿超最强女主播开团</p>
+                    </div>
+                    <div class="cover-all">
+                        <p>贪玩蓝月</p>
+                        <p>一刀999级，不删档内测</p>
+                        <span>立即下载</span>
                     </div>
                 </li>
                 <li>
-                    <div>
+                    <div class="cover-bottom">
                         <p>阿超最强女主播开团</p>
+                    </div>
+                    <div class="cover-all">
+                        <p>贪玩蓝月</p>
+                        <p>一刀999级，不删档内测</p>
+                        <span>立即下载</span>
                     </div>
                 </li>
                 <li>
-                    <div>
+                    <div class="cover-bottom">
                         <p>阿超最强女主播开团</p>
+                    </div>
+                    <div class="cover-all">
+                        <p>贪玩蓝月</p>
+                        <p>一刀999级，不删档内测</p>
+                        <span>立即下载</span>
                     </div>
                 </li>
                 <li>
-                    <div>
+                    <div class="cover-bottom">
                         <p>阿超最强女主播开团</p>
+                    </div>
+                    <div class="cover-all">
+                        <p>贪玩蓝月</p>
+                        <p>一刀999级，不删档内测</p>
+                        <span>立即下载</span>
                     </div>
                 </li>
                 <li>
-                    <div>
+                    <div class="cover-bottom">
                         <p>阿超最强女主播开团</p>
+                    </div>
+                    <div class="cover-all">
+                        <p>贪玩蓝月</p>
+                        <p>一刀999级，不删档内测</p>
+                        <span>立即下载</span>
                     </div>
                 </li>
                 <div></div>
@@ -49,57 +79,57 @@
             <ul>
                 <li>
                     <i>1</i>
-                    <div></div>
-                    <p>热血传奇</p>
-                    <span>立即下载</span>
-                    <p class="none">90万人在玩</p>
+                    <div class="none"></div>
+                    <p>贪玩蓝月</p>
+                    <span class="none">立即下载</span>
+                    <p>90万人在玩</p>
                 </li>
                 <li>
                     <i>2</i>
                     <div class="none"></div>
-                    <p>热血传奇</p>
+                    <p>贪玩蓝月</p>
                     <span class="none">立即下载</span>
                     <p>90万人在玩</p>
                 </li>
                 <li>
                     <i>3</i>
                     <div class="none"></div>
-                    <p>热血传奇</p>
+                    <p>贪玩蓝月</p>
                     <span class="none">立即下载</span>
                     <p>90万人在玩</p>
                 </li>
                 <li>
                     <i>4</i>
                     <div class="none"></div>
-                    <p>热血传奇</p>
+                    <p>贪玩蓝月</p>
                     <span class="none">立即下载</span>
                     <p>90万人在玩</p>
                 </li>
                 <li>
                     <i>5</i>
                     <div class="none"></div>
-                    <p>热血传奇</p>
+                    <p>贪玩蓝月</p>
                     <span class="none">立即下载</span>
                     <p>90万人在玩</p>
                 </li>
                 <li>
                     <i>6</i>
                     <div class="none"></div>
-                    <p>热血传奇</p>
+                    <p>贪玩蓝月</p>
                     <span class="none">立即下载</span>
                     <p>90万人在玩</p>
                 </li>
                 <li>
                     <i>7</i>
                     <div class="none"></div>
-                    <p>热血传奇</p>
+                    <p>贪玩蓝月</p>
                     <span class="none">立即下载</span>
                     <p>90万人在玩</p>
                 </li>
                 <li>
                     <i>8</i>
                     <div class="none"></div>
-                    <p>热血传奇</p>
+                    <p>贪玩蓝月</p>
                     <span class="none">立即下载</span>
                     <p>90万人在玩</p>
                 </li>
