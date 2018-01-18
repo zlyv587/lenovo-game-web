@@ -8,6 +8,7 @@ import {init} from './common/request.js';
 
 import './main.less';
 
+import 'swiper/dist/css/swiper.min.css'
 
 
 Vue.prototype.$bus = new Vue();
