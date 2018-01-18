@@ -7,7 +7,7 @@ const component = resolve => require(['./index.vue'], resolve);
 export default[
     {
         path: '/webgame',
-        name: '/webgame',
+        name: 'webgame',
         component,
     }
 ]
