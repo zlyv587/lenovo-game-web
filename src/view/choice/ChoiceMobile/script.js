@@ -1,10 +1,8 @@
 /**
  * Created by Lzhang on 2017/12/11.
  */
-import ChoiceWe from "./ChoiceWechat/index.vue"
-import ChoiceMo from "./ChoiceMobile/index.vue"
 export default {
-    name:"appChoice",
+    name:"app",
     data () {
         return {
             msg: 'Welcome to Your Vue.js App'
@@ -21,8 +19,4 @@ export default {
     methods: {
 
     },
-    components: {
-        'v-weGame':ChoiceWe,
-        'v-moGame':ChoiceMo,
-    }
 }
