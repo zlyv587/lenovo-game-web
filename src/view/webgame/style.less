@@ -1,20 +1,19 @@
 @import "../../common/base.less";
 .webgame{
   height:auto;
-.px2rem(margin-left, 204);
-  .px2rem(width, 958);
-  background: #FFF;
+  width:100%;
+  background: #ddd;
   .tab{
       .px2rem(height, 42);
-      .px2rem(width, 958);
+      width:100%;
       background:;
   }
-  .top{
-      .px2rem(width, 958);
+.top-banner{
+      width:100%;
       display:flex;
       flex-direction: row;
       img{
-        .px2rem(width, 958);
+        .px2rem(width, 678);
         .px2rem(height, 208); 
       }
       .download{
@@ -40,43 +39,98 @@
               display:flex;
               justify-content: center;
               align-items: center;
-              .icon-xiazai:before {
-                  content: "\e900";
-                  color: #fff;
-                }
-                .icon-xiazai{
-                    .px2rem(font-size, 16);
-                }
                 .bulk{
                     .px2rem(font-size, 10);
                 }
           }          
       }
-      .banner{
-          .px2rem(width, 248);
+}
+.mid-banner{
+          width:100%;
           .px2rem(height, 248);
           .px2rem(padding-top, 30);
-          border:2px;
-      }
-      .recommendList{
-          .px2rem(width, 958);
-          .px2rem(padding-left, 30);
-          height:;
-          .line{
+          .multiPx2rem(padding, 30, 44, 30, 44);
+          display:flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .item{
+              .px2rem(height, 187);
+              .px2rem(width, 210);
+              background:#FFF;
+          }
+}
+      .recommend{
+          .multiPx2rem(padding,0,30,0,30);
+          width:100%;        
+          .title{
+              display:flex;
+              flex-direction: row;
+                .px2rem(line-height, 16);
+              
+              h3{
+                .px2rem(padding-left, 12);
+                .px2rem(font-size, 14);
+                .px2rem(height, 14);             
+                color:#565656;  
+              }
+              p{
+                 .px2rem(font-size, 12);      
+                 .px2rem(height, 12);        
+                color:#575757;   
+              }
+              .filler{
+                  flex-grow: 1;
+                  .px2rem(height, 14); 
+              }
+              .line{
               .px2rem(width, 3);
               .px2rem(height, 16);
               background:#0063FF;
+              }
           }
-          .title{
-              .px2rem(width, 850);
-              .px2rem(padding-left, 12);
-              .px2rem(font-size, 16);             
-              color:#565656;              
-          }
-          .more{              
-              .px2rem(font-size, 10);
-              color:#575757;
+          .list{
+              
+              width:100%;
+              display:flex;
+              flex-wrap:wrap;
+              
+              justify-content: space-between;
+              .item{
+                  .px2rem(width, 293);
+                  .px2rem(height, 260);
+                  .multiPx2rem(padding,0,0,30,0);
+                  background:#ddd;
+                  img{
+                      .px2rem(width,293);
+                      .px2rem(height,160);
+                  }
+                  .intro{
+                      background: #fff;
+                      .px2rem(width,293);
+                      .px2rem(height,70);
+                      .multiPx2rem(padding,0,10,0,10);
+                      h3{
+                      .px2rem(height,12);
+                       .px2rem(font-size,12);
+                       .px2rem(margin-top,3);   
+                      }
+                      p{
+                       .px2rem(width,283); 
+                       
+                       .px2rem(font-size,10);
+                       white-space: nowrap;
+                       text-overflow: ellipsis;
+                       overflow:hidden;   
+                      }
+                      span{
+                          display:block flex;
+                          flex-direction: row;
+                          .px2rem(font-size,10);   
+                          .px2rem(height,10);   
+                      }
+                  }
+                  
+              }
           }
       }
-  }
 }
