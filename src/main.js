@@ -8,7 +8,10 @@ import {init} from './common/request.js';
 
 import './main.less';
 
-import 'swiper/dist/css/swiper.min.css'
+// 引入头部Header，公共组件
+import Header from './components/Header';
+Vue.use(Header);
+
 
 
 Vue.prototype.$bus = new Vue();
