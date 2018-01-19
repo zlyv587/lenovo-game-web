@@ -3,7 +3,7 @@
  */
 import HotGame from "../pagegame/HotGame/index.vue"
 import TypeGame from "../pagegame/TypeGame/index.vue"
-import Header from "../../framework/Header/index.vue"
+import Header from "../../components/Header/header.vue"
 import Swipe from "../../components/swiper/swiper.vue"
 export default {
     name:"appChoice",
