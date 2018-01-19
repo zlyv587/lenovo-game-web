@@ -6,8 +6,8 @@ const component = resolve => require(['./index.vue'], resolve);
 
 export default[
     {
-        path: '/index',
-        name: 'index',
+        path: '/details',
+        name: 'details',
         component,
     }
 ]
