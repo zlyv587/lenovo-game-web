@@ -3,7 +3,7 @@
  */
 import ChoiceWe from "./ChoiceWechat/index.vue"
 import ChoiceMo from "./ChoiceMobile/index.vue"
-import Header from "../../framework/Header/index.vue"
+import Header from "../../components/Header/header.vue"
 import Swipe from "../../components/swiper/swiper.vue"
 export default {
     name:"appChoice",
