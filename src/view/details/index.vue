@@ -32,7 +32,7 @@
             </div>
             <div class="configure">
                 <div class="configure_top">
-                    <span class="configure_top_bt">配置推</span>
+                    <span class="configure_top_bt">配置推荐</span>
                 </div>
                 <ul class="configure_bt">
                     <li>CPU</li>
