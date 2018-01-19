@@ -7,9 +7,11 @@ import 'babel-polyfill';
 import {init} from './common/request.js';
 
 import './main.less';
+
 // 引入头部Header，公共组件
 import Header from './components/header';
 Vue.use(Header);
+
 
 
 Vue.prototype.$bus = new Vue();
