@@ -2,9 +2,9 @@
     <div id="appChoice">
         <v-header></v-header>
         <v-swipe :style="styleObject"></v-swipe>
-        <v-weGame></v-weGame>
-        <v-weGame></v-weGame>
-        <v-moGame></v-moGame>
+        <v-hotGame></v-hotGame>
+        <v-typeGame></v-typeGame>
+        <v-typeGame></v-typeGame>
     </div>
 
 </template>

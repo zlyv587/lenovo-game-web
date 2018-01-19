@@ -1,8 +1,8 @@
 /**
  * Created by Lzhang on 2017/12/11.
  */
-import ChoiceWe from "./ChoiceWechat/index.vue"
-import ChoiceMo from "./ChoiceMobile/index.vue"
+import HotGame from "../pagegame/HotGame/index.vue"
+import TypeGame from "../pagegame/TypeGame/index.vue"
 import Header from "../../framework/Header/index.vue"
 import Swipe from "../../components/swiper/swiper.vue"
 export default {
@@ -27,8 +27,8 @@ export default {
 
     },
     components: {
-        'v-weGame':ChoiceWe,
-        'v-moGame':ChoiceMo,
+        'vHotGame':HotGame,
+        'vTypeGame':TypeGame,
         'vHeader':Header,
         'vSwipe':Swipe
     }
