@@ -1,5 +1,7 @@
 <template>
     <div id="appChoice">
+        <v-header></v-header>
+        <v-swiper></v-swiper>
         <v-weGame></v-weGame>
         <v-weGame></v-weGame>
         <v-moGame></v-moGame>

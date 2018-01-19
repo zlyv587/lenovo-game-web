@@ -3,6 +3,8 @@
  */
 import ChoiceWe from "./ChoiceWechat/index.vue"
 import ChoiceMo from "./ChoiceMobile/index.vue"
+import Header from "../../framework/Header/index.vue"
+import Swiper from "../../components/swiper/swiper.vue"
 export default {
     name:"appChoice",
     data () {
@@ -24,5 +26,7 @@ export default {
     components: {
         'v-weGame':ChoiceWe,
         'v-moGame':ChoiceMo,
+        'vHeader':Header,
+        'vSwiper':Swiper
     }
 }
