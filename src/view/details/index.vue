@@ -20,7 +20,7 @@
         <div class="game_word">
             <div class="introduce">
                 <div class="introduce_top">
-                    <span class="introduce_top_bt">游戏介绍</span>
+                    <div class="introduce_top_bt">游戏介绍</div>
                 </div>
                 <p class="introduce_word">
                     海量风格各异的英雄，丰富、便捷的物品合成系统，游戏内置的匹配、排行和竞技系统， 独创的“召唤师”系统及技能、符文、天赋等系统组
@@ -32,7 +32,7 @@
             </div>
             <div class="configure">
                 <div class="configure_top">
-                    <span class="configure_top_bt">配置推荐</span>
+                    <div class="configure_top_bt">配置推荐</div>
                 </div>
                 <ul class="configure_bt">
                     <li>CPU</li>
