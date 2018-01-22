@@ -1,0 +1,95 @@
+@import "../../common/base.less";
+.recommend{
+  height:auto;
+  width:100%;
+.multiPx2rem(padding,0,30,0,30);
+  .back{
+     .px2rem(height, 42);
+     .px2rem(line-height, 42);
+     .px2rem(font-size, 16);
+     color:#8D8D8D; 
+  }
+  .family{
+      .multiPx2rem(padding, 10,10,10,10);
+      .px2rem(border-radius,4);
+      .px2rem(height,79);
+      background: #F6F7F8;
+      display: flex;
+      flex-wrap: wrap;
+      li{
+         .px2rem(width, 130);
+         a{
+            .px2rem(font-size, 14); 
+            color:#575757;
+         }
+         a:hover{
+             color:#2778FF;
+         }
+      }
+  }
+  .sortby{
+      .px2rem(width,384);
+      .px2rem(height,35);
+      .px2rem(margin-top,20);
+      .px2rem(margin-left,513);
+      .px2rem(border-width,1);
+      border-style: solid;
+      border-color: #E4E4E4;
+      background: #FCFCFC;
+      display:flex;
+      flex-direction: row;
+      .btn{
+          flex-basis:33.3%;
+          display:flex;
+          align-items: center;
+          justify-content: center;
+      }
+  }
+.games{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content:space-between;
+    .px2rem(margin-top,25);
+    .multiPx2rem(padding,0,30,0,30);
+    .item{
+        .px2rem(width, 178);
+        .px2rem(height,123);
+        .multiPx2rem(padding,0,0,35,0);
+        display:flex;
+        flex-direction: row;
+        .img{
+            .px2rem(width,88);
+            .px2rem(height,88);
+            .px2rem(border-radius,18);
+            background: deepskyblue;
+            
+        }
+        .msg{
+            .px2rem(margin-left,20);
+            .px2rem(height,87);
+            display:flex;
+        flex-direction: column;
+           h3{
+                .px2rem(font-size,16);
+            }
+            span{
+                .px2rem(font-size,10);
+            } 
+        }
+        
+    }
+    .pages{
+        .px2rem(height,28);
+        .px2rem(margin-top,7);
+        width:100%;
+//      align-content: center;
+        align-items: center;
+        justify-content: center;
+        background: #ddd;
+        display:flex;
+    }
+}
+
+}
