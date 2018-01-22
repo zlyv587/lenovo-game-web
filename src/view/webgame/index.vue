@@ -29,7 +29,7 @@
 					<div class="intro">
 						<h3>贪玩蓝月</h3>
 						<p>一刀999一刀999一刀999一刀999一刀快来加入快来加入好的</p>
-						<div><span class="num">1</span><span>下载次数</span><span class="count">999999999</span></div>
+						<div><span class="num num-hot">1</span>&nbsp&nbsp<span>下载次数</span>&nbsp&nbsp<span class="count">999999999</span></div>
 					</div>
 				</div>
 				<div class="item">
@@ -37,7 +37,7 @@
 					<div class="intro">
 						<h3>贪玩蓝月</h3>
 						<p>一刀999一刀999一刀999一刀999一刀快来加入快来加入好的</p>
-						<div><span class="">2</span>下载次数<span>999999999</span></div>
+						<div><span class="num num-hot">2</span>下载次数<span>999999999</span></div>
 					</div>
 				</div>
 				<div class="item">
@@ -45,7 +45,7 @@
 					<div class="intro">
 						<h3>贪玩蓝月</h3>
 						<p>一刀999一刀999一刀999一刀999一刀快来加入快来加入好的</p>
-						<div><span class="">3</span>下载次数<span>999999999</span></div>
+						<div><span class="num num-hot">3</span>下载次数<span>999999999</span></div>
 					</div>
 				</div>
 				<div class="item">
@@ -53,7 +53,7 @@
 					<div class="intro">
 						<h3>贪玩蓝月</h3>
 						<p>一刀999一刀999一刀999一刀999一刀快来加入快来加入好的</p>
-						<div><span class="">4</span>下载次数<span>999999999</span></div>
+						<div><span class="num">4</span>下载次数<span>999999999</span></div>
 					</div>
 				</div>
 				<div class="item">
@@ -61,7 +61,7 @@
 					<div class="intro">
 						<h3>贪玩蓝月</h3>
 						<p>一刀999一刀999一刀999一刀999一刀快来加入快来加入好的</p>
-						<div><span class="">5</span>下载次数<span>999999999</span></div>
+						<div><span class="num">5</span>下载次数<span>999999999</span></div>
 					</div>
 				</div>
 				<div class="item">
@@ -69,7 +69,7 @@
 					<div class="intro">
 						<h3>贪玩蓝月</h3>
 						<p>一刀999一刀999一刀999一刀999一刀快来加入快来加入好的</p>
-						<div><span class="">6</span>下载次数<span>999999999</span></div>
+						<div><span class="num">6</span>下载次数<span>999999999</span></div>
 					</div>
 				</div>
 				<div class="item">
@@ -77,7 +77,7 @@
 					<div class="intro">
 						<h3>贪玩蓝月</h3>
 						<p>一刀999一刀999一刀999一刀999一刀快来加入快来加入好的</p>
-						<div><span class="">7</span>下载次数<span>999999999</span></div>
+						<div><span class="num">7</span>下载次数<span>999999999</span></div>
 					</div>
 				</div>
 				<div class="item">
@@ -85,7 +85,7 @@
 					<div class="intro">
 						<h3>贪玩蓝月</h3>
 						<p>一刀999一刀999一刀999一刀999一刀快来加入快来加入好的</p>
-						<div><span class="">8</span>下载次数<span>999999999</span></div>
+						<div><span class="num">8</span>下载次数<span>999999999</span></div>
 					</div>
 				</div>
 				<div class="item">
@@ -93,7 +93,7 @@
 					<div class="intro">
 						<h3>贪玩蓝月</h3>
 						<p>一刀999一刀999一刀999一刀999一刀快来加入快来加入好的</p>
-						<div><span class="">9</span>下载次数<span>999999999</span></div>
+						<div><span class="num">9</span>下载次数<span>999999999</span></div>
 					</div>
 				</div>
 			</div>
