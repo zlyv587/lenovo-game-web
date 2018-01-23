@@ -38,7 +38,7 @@ const CancelToken = axios.CancelToken;
 let cancels = [];
 const singleRequestObj = {};//  防止多次请求存储请求的cancel方法
 const request = (url = '', data = {}, method = 'get', options = {}) => {
-    const { isCancelRepeatRequest = true } = options;
+    const {isCancelRepeatRequest = true} = options;
     let cancel;
     const basicConfig = {
         method,
@@ -76,6 +76,9 @@ const request = (url = '', data = {}, method = 'get', options = {}) => {
             _success(res);
             _complete();
         }).catch(err => {
+            if (err.message.cancel) {
+                return false;
+            }
             resolve(err);// 这样系统会吞掉err，业务层面就不用再写catch方法处理异常了
             complete();
             handleError(err, config);// 可以把请求信息抛出去
