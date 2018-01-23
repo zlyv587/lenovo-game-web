@@ -5,7 +5,7 @@
                <i></i>
                <p>手游</p>
                <p>查看更多</p>
-               <div></div>
+               <div class="clear"></div>
             </div>
             <ul>
                <li>
@@ -140,7 +140,6 @@
                      <span>安装</span>
                   </div>
                </li>
-               <div></div>
             </ul>
          </div>
          <div class="right-part">
@@ -193,6 +192,7 @@
                </li>
             </ul>
          </div>
+         <div class="clear"></div>
       </div>
 </template>
 
