@@ -1,7 +1,7 @@
 <template>
     <div id="appChoice">
         <v-header></v-header>
-        <v-swipe :style="styleObject"></v-swipe>
+        <v-swiper :style="styleObject"></v-swiper>
         <v-hotGame></v-hotGame>
         <v-typeGame></v-typeGame>
         <v-typeGame></v-typeGame>

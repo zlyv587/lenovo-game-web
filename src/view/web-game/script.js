@@ -5,8 +5,7 @@
 export default {
     data () {
         return {
-            msg: 'Welcome to Your Vue.js App',
-            isShow:false
+            msg: 'Welcome to Your Vue.js App'
         }
     },
     computed: {
@@ -17,8 +16,6 @@ export default {
        //  this.changeCount()
     },
     methods: {
-		isIn(){
-			this.isShow=true;
-		}
+
     }
 }
