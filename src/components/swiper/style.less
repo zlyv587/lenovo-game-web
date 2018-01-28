@@ -1,1 +1,141 @@
 @import "../../common/base.less";
+@import "../../../static/css/swiper.min.css";
+.swiper{
+  height: 100%;
+  width: 100%;
+}
+.swiper-container {
+  width: 100%;
+  // height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide {
+  background-size:100% 100%!important;
+  .px2rem(height, 208);
+  .px2rem(width, 957);
+}
+.swiper-slide img{
+  .px2rem(width, 957);
+  .px2rem(height, 209);
+
+}
+.swiper-button-prev{
+  background-image: url(../../assets/prev.png);
+}
+.swiper-button-next{
+  background-image: url(../../assets/next.png);
+}
+.swiper-pagination-bullet{
+  background:#0063ff;
+}
+.swiper-pagination-bullet-active{
+  background:#0063ff;
+}
+.gallery-top {
+  .px2rem(width, 700);
+
+  .px2rem(height, 206)!important;
+
+}
+.gallery-thumbs {
+  box-sizing: border-box;
+  .px2rem(width, 700);
+
+}
+.gallery-thumbs .swiper-slide {
+  .px2rem(width, 130);
+  .px2rem(height, 92);
+  .px2rem(border-radius, 8);
+  background-size:100% 100%!important;
+
+}
+.gallery-thumbs .swiper-slide-active {
+  border-color:#0063ff;
+  border-style:solid;
+  .px2rem(border-width, 1);
+}
+.swiper-slide{
+  .px2rem(height, 208);
+}
+
+.game-banner{
+  .px2rem(width, 962);
+  float:left;
+  .game-introduce{
+    .px2rem(width, 282);
+    .px2rem(height, 208);
+    float:right;
+    background:#4b433e;
+    p{
+      color:#fff;
+      text-align:center;
+    }
+    .game-title{
+      .px2rem(font-size, 16);
+      .px2rem(margin-top, 55);
+    }
+    .game-introduce{
+      .px2rem(font-size, 12);
+    }
+    .download-button{
+      margin:0 auto;
+      text-align:center;
+      color:#fff;
+      background:#6196ec;
+      .px2rem(width, 155);
+      .px2rem(height, 32);
+      .px2rem(line-height, 32);
+      .px2rem(border-radius, 6);
+    }
+  }
+  .game-img{
+    .px2rem(width, 680);
+    float:left;
+    img{
+      .px2rem(width, 800);
+    }
+    .swiper-pagination{
+      .px2rem(left, 110);
+    }
+  }
+}
+.my-banner{
+  .swiper-wrapper{
+    .px2rem(width, 917);
+    .px2rem(height, 187);
+  }
+  .swiper-slide{
+    .px2rem(height, 187);
+
+  }
+  .swiper-button-prev{
+    .px2rem(top, 80);
+    .px2rem(left, 170);
+    right:auto;
+
+  }
+  .swiper-button-next{
+    .px2rem(right, 200);
+    .px2rem(top, 80);
+    left:auto
+  }
+  img{
+    .px2rem(width, 207);
+    .px2rem(height, 140);
+  }
+  .banner-introduce{
+    text-align:center;
+    border-color:#CDC8B1;
+    border-style:solid;
+    .px2rem(border-width, 1);
+    .px2rem(box-shadow, 1);
+    .px2rem(width, 207);
+    .px2rem(height, 46);
+  }
+}
+
+
+
+
+

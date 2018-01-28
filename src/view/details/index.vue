@@ -1,7 +1,9 @@
 <template>
     <div class="content">
         <div class="banner">
-            <div class="carousel"></div>
+            <div class="carousel">
+                <swiper :banners="banners" :flag="flag" :isInstall="isInstall"></swiper>
+            </div>
             <div class="carousel_info">
                 <h3>
                     <span class="carousel_icon"></span>
