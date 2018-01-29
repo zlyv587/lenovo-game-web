@@ -3,14 +3,14 @@
          <div class="left-part">
             <div class="banner">
                <i></i>
-               <p>网游</p>
+               <p>{{ options.name }}</p>
                <p>查看更多</p>
                <div class="clear"></div>
             </div>
             <ul>
-               <li>
+               <li v-for="item in titleList">
                   <div class="cover-bottom">
-                     <p>阿超最强女主播开团</p>
+                     <p>{{item.txt}}</p>
                   </div>
                   <div class="cover-all">
                      <p>贪玩蓝月</p>
@@ -18,56 +18,16 @@
                      <span>立即下载</span>
                   </div>
                </li>
-               <li>
-                  <div class="cover-bottom">
-                     <p>阿超最强女主播开团</p>
-                  </div>
-                  <div class="cover-all">
-                     <p>贪玩蓝月</p>
-                     <p>一刀999级，不删档内测</p>
-                     <span>立即下载</span>
-                  </div>
-               </li>
-               <li>
-                  <div class="cover-bottom">
-                     <p>阿超最强女主播开团</p>
-                  </div>
-                  <div class="cover-all">
-                     <p>贪玩蓝月</p>
-                     <p>一刀999级，不删档内测</p>
-                     <span>立即下载</span>
-                  </div>
-               </li>
-               <li>
-                  <div class="cover-bottom">
-                     <p>阿超最强女主播开团</p>
-                  </div>
-                  <div class="cover-all">
-                     <p>贪玩蓝月</p>
-                     <p>一刀999级，不删档内测</p>
-                     <span>立即下载</span>
-                  </div>
-               </li>
-               <li>
-                  <div class="cover-bottom">
-                     <p>阿超最强女主播开团</p>
-                  </div>
-                  <div class="cover-all">
-                     <p>贪玩蓝月</p>
-                     <p>一刀999级，不删档内测</p>
-                     <span>立即下载</span>
-                  </div>
-               </li>
-               <li>
-                  <div class="cover-bottom">
-                     <p>阿超最强女主播开团</p>
-                  </div>
-                  <div class="cover-all">
-                     <p>贪玩蓝月</p>
-                     <p>一刀999级，不删档内测</p>
-                     <span>立即下载</span>
-                  </div>
-               </li>
+               <!--<li>-->
+                  <!--<div class="cover-bottom">-->
+                     <!--<p>阿超最强女主播开团</p>-->
+                  <!--</div>-->
+                  <!--<div class="cover-all">-->
+                     <!--<p>贪玩蓝月</p>-->
+                     <!--<p>一刀999级，不删档内测</p>-->
+                     <!--<span>立即下载</span>-->
+                  <!--</div>-->
+               <!--</li>-->
             </ul>
          </div>
          <div class="right-part">

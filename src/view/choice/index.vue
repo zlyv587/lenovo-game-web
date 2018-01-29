@@ -1,10 +1,9 @@
 <template>
     <div id="appChoice">
         <v-header></v-header>
-        <v-swiper :style="styleObject"></v-swiper>
-        <v-weGame></v-weGame>
-        <v-weGame></v-weGame>
-        <v-moGame></v-moGame>
+        <v-swiper :banners="banners"  flag="1"></v-swiper>
+        <v-weGame v-for="game in gameList" :options="game"  :key = "game.id" :titleList="titleList"></v-weGame>
+        <v-moGame :mobileList="mobileList"></v-moGame>
     </div>
 
 </template>

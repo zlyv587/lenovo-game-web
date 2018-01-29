@@ -5,16 +5,23 @@ export default {
     name:"app",
     data () {
         return {
-            msg: 'Welcome to Your Vue.js App'
+
         }
     },
+    created () {
+        // this.newdata()
+        // this.getEdition()
+        // this.getRegional()
+        // this.getLists()
+    },
+    props: ['options','titleList'],
     computed: {
 
     },
     mounted() {
        // // this.home.changeCount();
        //  this.changeCount()
-
+       // this.getTitleLists();
     },
     methods: {
 

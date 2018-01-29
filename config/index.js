@@ -40,36 +40,41 @@ module.exports = {
         assetsSubDirectory: 'static',
         assetsPublicPath: '/',
         proxyTable: {
-            '/iworld': {
-                target: 'http://221.181.100.150:18090',
-                changeOrigin: true
-            },
-            '/lightChina': {
-                target: 'http://172.29.2.166:7077', // 开发
-                // target: 'http://172.29.2.168:7077', // 测试
-                // target: 'http://newtestadmin.lex.lenovo.com.cn', // 测试
-                // target: 'http://newadmin.gray.lex.lenovo.com.cn', // 灰度地址
-                // target: 'http://10.10.42.216:7077', // 曾李本地
-                // target: 'http://10.10.45.138:7077', // 浩哥本地
-                // target: 'http://admin.lex.lenovo.com.cn',
+            '/indexChannel':{
+                target:'http://gameapi.test.epg.lenovo.com.cn',
                 changeOrigin: true,
             },
-            '/pyramid/': {
-                // target: 'http://testmessage.lex.lenovo.com.cn',
-                //  target: 'http://newtestadmin.lex.lenovo.com.cn',
-                // target: 'http://172.29.2.166:8',
-                target:'http://newtestadmin.lex.lenovo.com.cn/',
-                // target: 'http://10.10.41.85:8050',
-                // target: 'http://10.10.42.205:8050', // 管青企本地
-                // target: 'http://10.10.41.118:8050',// 丹丹本地
-                // target: 'http://10.10.41.118:8050',// 旗哥本地
-                // target: 'http://172.29.2.168:8050',
-                // target: 'http://admin.lex.lenovo.com.cn',
-                changeOrigin: true,
-            },
-            '/statics/': {
-                target: 'http://172.29.2.168:7077', // 开发
-            }
+            //http://gameapi.test.epg.lenovo.com.cn/indexChannel/93?relativeId=46
+            // '/iworld': {
+            //     target: 'http://221.181.100.150:18090',
+            //     changeOrigin: true
+            // },
+            // '/lightChina': {
+            //     target: 'http://172.29.2.166:7077', // 开发
+            //     // target: 'http://172.29.2.168:7077', // 测试
+            //     // target: 'http://newtestadmin.lex.lenovo.com.cn', // 测试
+            //     // target: 'http://newadmin.gray.lex.lenovo.com.cn', // 灰度地址
+            //     // target: 'http://10.10.42.216:7077', // 曾李本地
+            //     // target: 'http://10.10.45.138:7077', // 浩哥本地
+            //     // target: 'http://admin.lex.lenovo.com.cn',
+            //     changeOrigin: true,
+            // },
+            // '/pyramid/': {
+            //     // target: 'http://testmessage.lex.lenovo.com.cn',
+            //     //  target: 'http://newtestadmin.lex.lenovo.com.cn',
+            //     // target: 'http://172.29.2.166:8',
+            //     target:'http://newtestadmin.lex.lenovo.com.cn/',
+            //     // target: 'http://10.10.41.85:8050',
+            //     // target: 'http://10.10.42.205:8050', // 管青企本地
+            //     // target: 'http://10.10.41.118:8050',// 丹丹本地
+            //     // target: 'http://10.10.41.118:8050',// 旗哥本地
+            //     // target: 'http://172.29.2.168:8050',
+            //     // target: 'http://admin.lex.lenovo.com.cn',
+            //     changeOrigin: true,
+            // },
+            // '/statics/': {
+            //     target: 'http://172.29.2.168:7077', // 开发
+            // }
         },
         // CSS Sourcemaps off by default because relative paths are "buggy"
         // with this option, according to the CSS-Loader README
