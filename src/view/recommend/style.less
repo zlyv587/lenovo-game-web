@@ -2,24 +2,26 @@
 .recommend {
     height: auto;
     width: 100%;
-    .multiPx2rem(padding, 0, 30, 0, 30);
     .back {
         .px2rem(height, 42);
         .px2rem(line-height, 42);
         .px2rem(font-size, 16);
         color: #8D8D8D;
+        .px2rem(margin-left,30);
     }
     .family {
-        .multiPx2rem(padding, 10, 10, 10, 10);
         .px2rem(border-radius, 4);
-        .px2rem(height, 79);
+        .px2rem(height, 80);
+        .px2rem(width,898);
+        .px2rem(margin-left,30);
         background: #F6F7F8;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        float:left;
         li {
-            .px2rem(width, 130);
-            text-align: center;
+            .px2rem(height, 14);
+            .px2rem(margin-left,16);
+            .px2rem(margin-top,16);
+            text-align: left;
+            float:left;
             a {
                 .px2rem(font-size, 14);
                 color: #575757;
@@ -29,46 +31,49 @@
             }
         }
     }
-    .sortby {
+    .sort{
         .px2rem(width, 384);
         .px2rem(height, 35);
         .px2rem(margin-top, 20);
-        .px2rem(margin-left, 513);
+        .px2rem(margin-left, 543);
         .px2rem(border-width, 1);
         border-style: solid;
         border-color: #E4E4E4;
         background: #FCFCFC;
-        display: flex;
-        flex-direction: row;
-        .btn {
-            flex-basis: 33.3%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        float:left;
+        li{
+            float:left;
+            text-align: center;
+            .px2rem(line-height,16);
+            .px2rem(margin-top,9.5);
+            .px2rem(height,16);
+            width:33.3%;
+            cursor: pointer;
+        }
+        li:nth-of-type(1), li:nth-of-type(2){
+            border-right:1px solid;
         }
     }
     .games {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        float:left;
         width: 100%;
-        justify-content: space-between;
         .item {
-            .px2rem(width, 431);
+            .px2rem(width, 432);
             .px2rem(height, 100);
             .px2rem(margin-top, 30);
-            display: flex;
-            flex-direction: row;
+            .px2rem(margin-left,30);
+            float:left;
             .img {
                 .px2rem(width, 250);
                 .px2rem(height, 100);
                 background: deepskyblue;
+                float:left;
             }
             .msg {
-                .px2rem(margin-left, 28);
+                float:left;
+                .px2rem(margin-left,28);
                 .px2rem(height, 100);
-                display: flex;
-                flex-direction: column;
+                .px2rem(width, 154);
                 h3,
                 .download-times {
                     .px2rem(font-size, 16);
@@ -85,31 +90,34 @@
                 }
             }
         }
-        .footer {
-            .px2rem(height, 58);
-            .px2rem(margin-top, 30);
-            .px2rem(padding-bottom, 30);
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            .px2rem(font-size, 12);
-            .paginal {
+    }
+    .footer {
+        .px2rem(height, 58);
+        .px2rem(margin-top, 30);
+        .px2rem(margin-left, 271);
+        .px2rem(padding-bottom, 30);
+        .px2rem(font-size, 12);
+        float:left;
+        .sum{
+            float:left;
+            .px2rem(line-height, 28);
+        }
+        .paginal {
+            float:left;
+            .px2rem(margin-left, 10);
+            .px2rem(width, 110);
+            .px2rem(height, 28);
+            .px2rem(border-radius, 2);
+            .multiPx2rem(padding, 5, 0, 5, 5);
+            border: 1px solid #999;
+        }
+        .paging {
+            float:left;
+            .px2rem(width, 196);
+            .px2rem(height, 28);
+            .el-pagination {
                 .px2rem(margin-left, 10);
-                .px2rem(width, 110);
-                .px2rem(height, 28);
-                .px2rem(border-radius, 2);
-                .multiPx2rem(padding, 5, 0, 5, 5);
-                display: block;
-                border: 1px solid #999;
-            }
-            .paging {
-                .px2rem(width, 196);
-                .px2rem(height, 28);
-                .el-pagination {
-                    .px2rem(margin-left, 10);
-                    padding:0;
-                }
+                padding:0;
             }
         }
     }

@@ -37,93 +37,93 @@
 						<a href="javascript:void">角色扮演(1000)</a>
 					</li>
 				</ul>
-				<div class="sortby">
-					<div class="btn date">更新时间↓</div>
-					<div class="btn times">下载次数↓</div>
-					<div class="btn rating">综合评分↓</div>
-				</div>
+				<ul class="sort">
+					<li class="btn date">更新时间↓</li>
+					<li class="btn times">下载次数↓</li>
+					<li class="btn rating">综合评分↓</li>
+				</ul>
 				<div class="games">
 					<div class="item">
 						<img class="img" src="../../assets/bg_img0.png" alt="...">
 						<div class="msg">
 							<h3>贪玩蓝月</h3>
-							<span class="size">大小：114MB</span>
-							<span class="download-times">下载：10000次</span>
-							<span class="date">更新日期：2018-01-01</span>
+							<p class="size">大小：114MB</p>
+							<p class="download-times">下载：10000次</p>
+							<p class="date">更新日期：2018-01-01</p>
 						</div>
 					</div>
 					<div class="item">
 						<img class="img" src="../../assets/bg_img0.png" alt="...">
 						<div class="msg">
 							<h3>贪玩蓝月</h3>
-							<span class="size">大小：114MB</span>
-							<span class="download-times">下载：10000次</span>
-							<span class="date">更新日期：2018-01-01</span>
+                            <p class="size">大小：114MB</p>
+							<p class="download-times">下载：10000次</p>
+							<p class="date">更新日期：2018-01-01</p>
 						</div>
 					</div>
 					<div class="item">
 						<img class="img" src="../../assets/bg_img0.png" alt="...">
 						<div class="msg">
 							<h3>贪玩蓝月</h3>
-							<span class="size">大小：114MB</span>
-							<span class="download-times">下载：10000次</span>
-							<span class="date">更新日期：2018-01-01</span>
+                            <p class="size">大小：114MB</p>
+							<p class="download-times">下载：10000次</p>
+							<p class="date">更新日期：2018-01-01</p>
 						</div>
 					</div>
 					<div class="item">
 						<img class="img" src="../../assets/bg_img0.png" alt="...">
 						<div class="msg">
 							<h3>贪玩蓝月</h3>
-							<span class="size">大小：114MB</span>
-							<span class="download-times">下载：10000次</span>
-							<span class="date">更新日期：2018-01-01</span>
+                            <p class="size">大小：114MB</p>
+							<p class="download-times">下载：10000次</p>
+							<p class="date">更新日期：2018-01-01</p>
 						</div>
 					</div>
 					<div class="item">
 						<img class="img" src="../../assets/bg_img0.png" alt="...">
 						<div class="msg">
 							<h3>贪玩蓝月</h3>
-							<span class="size">大小：114MB</span>
-							<span class="download-times">下载：10000次</span>
-							<span class="date">更新日期：2018-01-01</span>
+                            <p class="size">大小：114MB</p>
+							<p class="download-times">下载：10000次</p>
+							<p class="date">更新日期：2018-01-01</p>
 						</div>
 					</div>
 					<div class="item">
 						<img class="img" src="../../assets/bg_img0.png" alt="...">
 						<div class="msg">
 							<h3>贪玩蓝月</h3>
-							<span class="size">大小：114MB</span>
-							<span class="download-times">下载：10000次</span>
-							<span class="date">更新日期：2018-01-01</span>
+                            <p class="size">大小：114MB</p>
+							<p class="download-times">下载：10000次</p>
+							<p class="date">更新日期：2018-01-01</p>
 						</div>
 					</div>
 					<div class="item">
 						<img class="img" src="../../assets/bg_img0.png" alt="...">
 						<div class="msg">
 							<h3>贪玩蓝月</h3>
-							<span class="size">大小：114MB</span>
-							<span class="download-times">下载：10000次</span>
-							<span class="date">更新日期：2018-01-01</span>
+                            <p class="size">大小：114MB</p>
+							<p class="download-times">下载：10000次</p>
+							<p class="date">更新日期：2018-01-01</p>
 						</div>
 					</div>
 					<div class="item">
 						<img class="img" src="../../assets/bg_img0.png" alt="...">
 						<div class="msg">
 							<h3>贪玩蓝月</h3>
-							<span class="size">大小：114MB</span>
-							<span class="download-times">下载：10000次</span>
-							<span class="date">更新日期：2018-01-01</span>
-						</div>
-					</div>
-					<div class="footer">
-						<span class="sum">共45条</span>
-						<span class="paginal">10条/页</span>
-						<div class="paging">
-							<el-pagination layout="prev, pager, next" :total="50">
-							</el-pagination>
+                            <p class="size">大小：114MB</p>
+							<p class="download-times">下载：10000次</p>
+							<p class="date">更新日期：2018-01-01</p>
 						</div>
 					</div>
 				</div>
+				<div class="footer">
+                    <p class="sum">共45条</p>
+                    <p class="paginal">10条/页</p>
+                    <div class="paging">
+                        <el-pagination layout="prev, pager, next" :total="50">
+                        </el-pagination>
+                    </div>
+                </div>
 		</div>
 </template>
 
