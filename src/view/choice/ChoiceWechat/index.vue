@@ -8,13 +8,13 @@
                <div class="clear"></div>
             </div>
             <ul>
-               <li v-for="item in titleList">
+               <li v-for="item in gameList" :style="{backgroundImage:`url( ${item.poster} )`}">
                   <div class="cover-bottom">
-                     <p>{{item.txt}}</p>
+                     <p>{{item.elementName}}</p>
                   </div>
                   <div class="cover-all">
-                     <p>贪玩蓝月</p>
-                     <p>一刀999级，不删档内测</p>
+                     <p>{{item.title}}</p>
+                     <p>{{item.subTitle}}</p>
                      <span>立即下载</span>
                   </div>
                </li>

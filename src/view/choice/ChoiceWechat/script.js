@@ -14,7 +14,7 @@ export default {
         // this.getRegional()
         // this.getLists()
     },
-    props: ['options','titleList'],
+    props: ['options','gameList'],
     computed: {
 
     },

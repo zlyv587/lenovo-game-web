@@ -1,24 +1,24 @@
 <!--
-   ¾«Ñ¡+ÍøÓÎ 1£¨ÓĞÓÎÏ·ĞÅÏ¢½éÉÜ£©
-   Ò³ÓÎ  2
-   ÓÎÏ·ÄÚÒ³ 3
-   ÓÎÏ·¹ã¸æ£¨ËÄÕÅÍ¼Ò»ÆğÂÖ²¥ ÓĞÍ¼Æ¬ĞÅÏ¢½éÉÜ£© 4
+   ç²¾é€‰+ç½‘æ¸¸ 1ï¼ˆæœ‰æ¸¸æˆä¿¡æ¯ä»‹ç»ï¼‰
+   é¡µæ¸¸  2
+   æ¸¸æˆå†…é¡µ 3
+   æ¸¸æˆå¹¿å‘Šï¼ˆå››å¼ å›¾ä¸€èµ·è½®æ’­ æœ‰å›¾ç‰‡ä¿¡æ¯ä»‹ç»ï¼‰ 4
  <!--
-    ÓÃ·¨£º
-        1.µ¼Èë×é¼ş import swiper from '../../components/swiper/swiper';
-        2.×¢²á×é¼ş components:{swiper}
-        3.Ò³ÃæÒıÈë <swiper :banners="banners"></swiper>
-        4¡¢ĞèÒªÔÚ¸¸×é¼şÖĞ½«tabÀàĞÍÒÔ¼°´«¸ø×Ó×é¼ş£»
-        5.¸¸×é¼şĞèÔÚdataÖĞ¶¨Òåbanners,È»ºó½«responseÖĞÏà¹ØĞÅÏ¢´æÈë£¨×¢Òâ×Ö¶Î£©£¬ÒÔÏÂÎª±Ø´«ĞÅÏ¢
+    ç”¨æ³•ï¼š
+        1.å¯¼å…¥ç»„ä»¶ import swiper from '../../components/swiper/swiper';
+        2.æ³¨å†Œç»„ä»¶ components:{swiper}
+        3.é¡µé¢å¼•å…¥ <swiper :banners="banners"></swiper>
+        4ã€éœ€è¦åœ¨çˆ¶ç»„ä»¶ä¸­å°†tabç±»å‹ä»¥åŠä¼ ç»™å­ç»„ä»¶ï¼›
+        5.çˆ¶ç»„ä»¶éœ€åœ¨dataä¸­å®šä¹‰banners,ç„¶åå°†responseä¸­ç›¸å…³ä¿¡æ¯å­˜å…¥ï¼ˆæ³¨æ„å­—æ®µï¼‰ï¼Œä»¥ä¸‹ä¸ºå¿…ä¼ ä¿¡æ¯
        banners[
        {
-         url:'',ÂÖ²¥Í¼Æ¬µØÖ·(±Ø´«)
-         ÒÔÏÂ×Ö¶Î¸ù¾İtabÀàĞÍ
+         url:'',è½®æ’­å›¾ç‰‡åœ°å€(å¿…ä¼ )
+         ä»¥ä¸‹å­—æ®µæ ¹æ®tabç±»å‹
          isInstall:''
-         gameTitle:'',ÍøÓÎºÍ¾«Ñ¡Ä£¿éÓÎÏ·ĞÅÏ¢½éÉÜÓÎÏ·Ãû³Æ
-         gameIntroduce:''ÍøÓÎºÍ¾«Ñ¡Ä£¿éÓÎÏ·ÏêÇé½éÉÜ
-         bannerTitle:''ÂÖ²¥¹ã¸æµ×²¿title ÓÎÏ·Ãû³Æ
-         bannerIntroduce:''ÂÖ²¥¹ã¸æµ×²¿ÓÎÏ·ĞÅÏ¢½éÉÜ
+         gameTitle:'',ç½‘æ¸¸å’Œç²¾é€‰æ¨¡å—æ¸¸æˆä¿¡æ¯ä»‹ç»æ¸¸æˆåç§°
+         gameIntroduce:''ç½‘æ¸¸å’Œç²¾é€‰æ¨¡å—æ¸¸æˆè¯¦æƒ…ä»‹ç»
+         bannerTitle:''è½®æ’­å¹¿å‘Šåº•éƒ¨title æ¸¸æˆåç§°
+         bannerIntroduce:''è½®æ’­å¹¿å‘Šåº•éƒ¨æ¸¸æˆä¿¡æ¯ä»‹ç»
        },
       ...
  ]
@@ -27,7 +27,7 @@
 -->
 <template>
     <div class="swiper">
-        <!-- one Ò³ÓÎ-->
+        <!-- one é¡µæ¸¸-->
         <div class="swiper-container my-swiper" v-if="flag == 2">
             <div class="swiper-wrapper">
                 <!--<div  v-for="(banner,i) in banners" :key="i" class="swiper-slide swiper-slide-active" :style="{background:twoSwiper(banner)}"></div>-->
@@ -37,7 +37,7 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
-        <!-- two ËõÂÔÍ¼ ÓÎÏ·ÄÚÒ³-->
+        <!-- two ç¼©ç•¥å›¾ æ¸¸æˆå†…é¡µ-->
         <div class="swiper-container gallery-top swiper-container-horizontal swiper-container-wp8-horizontal" v-if="flag== 3">
             <div class="swiper-wrapper">
                 <!-- <div  v-for="(banner,i) in banners" :key="i" class="swiper-slide swiper-slide-active" :style="{background:twoSwiper(banner)}"></div>-->
@@ -54,7 +54,7 @@
                 <div v-for="banner in banners" class="swiper-slide swiper-slide-active" :style="{background:twoSwiper(banner.url)}"></div>
             </div>
         </div>
-        <!--three ¾«Ñ¡ºÍÍøÓÎ-->
+        <!--three ç²¾é€‰å’Œç½‘æ¸¸-->
         <div class='game-banner'>
             <div class="swiper-container game-img" v-if="flag == 1">
                 <div class="swiper-wrapper">
@@ -67,29 +67,29 @@
             <div class="swiper-container game-introduce" v-if="flag == 1">
                 <div class="swiper-wrapper">
                     <div v-for="banner in banners" class="swiper-slide">
-                        <p class='game-title'> Ì°ÍæÀ¶ÔÂ</p>
+                        <p class='game-title'> è´ªç©è“æœˆ</p>
                         <!--<p class="game-title">{{banner.gameTitle}}}</p>-->
                         <!--<p class='game-introduce'>{{banner.gameIntroduce}}}</p>-->
-                        <p style="font-size:12px">Ò»µ¶999¼¶£¬²»É¾µµÄÚ²â</p>
-                        <p style="font-size:12px">»ğ±¬¿ªÆô</p>
+                        <p style="font-size:12px">ä¸€åˆ€999çº§ï¼Œä¸åˆ æ¡£å†…æµ‹</p>
+                        <p style="font-size:12px">ç«çˆ†å¼€å¯</p>
                         <div v-if='banner.isInstall==false'class="download-button" @click="download()">
-                            Á¢¼´ÏÂÔØ
+                            ç«‹å³ä¸‹è½½
                         </div>
                         <div style='color:#fff;text-align:center'v-if='banner.isInstall==true' class="download-button" @click="open()">
-                            ´ò¿ª
+                            æ‰“å¼€
                         </div>
                     </div>
                 </div>
                 <div class="swiper-button-next"></div>
             </div>
         </div>
-        <!--four ËÄÕÅÍ¼Ò»ÆğÂÖ²¥ ÓÎÏ·¹ã¸æ-->
+        <!--four å››å¼ å›¾ä¸€èµ·è½®æ’­ æ¸¸æˆå¹¿å‘Š-->
         <div class='my-banner'>
             <div class="swiper-container" v-if="flag == 4">
                 <div class="swiper-wrapper">
                     <div v-for="banner in banners"  class="swiper-slide">
                         <img :src="banner.url" alt="" style='display:block'>
-                        <div class='banner-introduce'>°¢Ç¿×îÇ¿Å®ÍõÕß</div>
+                        <div class='banner-introduce'>é˜¿å¼ºæœ€å¼ºå¥³ç‹è€…</div>
                     </div>
                 </div>
             </div>
@@ -104,4 +104,3 @@
 <script src="./script.js"></script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-

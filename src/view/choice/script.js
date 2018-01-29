@@ -15,18 +15,11 @@ export default {
                 width:'100%',
 
             },
-            gameList: [
+            titleList: [
                 {'id':94,'name':'网游'},
                 {'id':95,'name':'微端'},
                 ],
-            titleList:[
-                {txt:'最强女主播开团'},
-                {txt:'最强女主播开团'},
-                {txt:'最强女主播开团'},
-                {txt:'最强女主播开团'},
-                {txt:'最强女主播开团'},
-                {txt:'最强女主播开团'},
-            ],
+            gameList:[],
             mobileList:[
                 {
                     name:'魔兽世界',
@@ -45,7 +38,7 @@ export default {
             banners:[
                 {
                     url:'http://smtv-cms.oss-cn-beijing.aliyuncs.com/cms/2018-01-25/201801251416138731366.png',
-                    isInstall:'测试',
+                    isInstall:true,
                     gameTitle:'测试',
                     gameIntroduce:'测试',
                     bannerTitle:'测试',
@@ -53,7 +46,7 @@ export default {
                 },
                 {
                     url:'http://smtv-cms.oss-cn-beijing.aliyuncs.com/cms/2018-01-25/201801251416138731366.png',
-                    isInstall:'测试',
+                    isInstall:false,
                     gameTitle:'测试',
                     gameIntroduce:'测试',
                     bannerTitle:'测试',
@@ -61,7 +54,7 @@ export default {
                 },
                 {
                     url:'http://smtv-cms.oss-cn-beijing.aliyuncs.com/cms/2018-01-25/201801251416138731366.png',
-                    isInstall:'测试',
+                    isInstall:false,
                     gameTitle:'测试',
                     gameIntroduce:'测试',
                     bannerTitle:'测试',
@@ -69,7 +62,7 @@ export default {
                 },
                 {
                     url:'http://smtv-cms.oss-cn-beijing.aliyuncs.com/cms/2018-01-25/201801251416138731366.png',
-                    isInstall:'测试',
+                    isInstall:false,
                     gameTitle:'测试',
                     gameIntroduce:'测试',
                     bannerTitle:'测试',
@@ -88,14 +81,16 @@ export default {
     mounted() {
        // // this.home.changeCount();
        //  this.changeCount()
-        this.getTitleLists();
+        this.getGameLists();
     },
     methods: {
-        getTitleLists () {
+        getGameLists () {
             // 接口地址在serviceUrl里
             getAwardDetail.getAwardDetail(93).then((res) => {
                 console.log(res.data)
                 console.log(this.titleList)
+            this.gameList = res.data.channels[0].modules[2].elements
+            console.log(this.gameList)
             })
         }
     },
