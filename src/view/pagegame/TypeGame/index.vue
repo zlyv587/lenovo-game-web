@@ -8,59 +8,9 @@
                <div class="clear"></div>
             </div>
             <ul>
-               <li>
+               <li v-for="item in rpgList">
                   <div class="cover-bottom">
-                     <p>阿超最强女主播开团</p>
-                  </div>
-                  <div class="cover-all">
-                     <p>贪玩蓝月</p>
-                     <p>一刀999级，不删档内测</p>
-                     <span>立即下载</span>
-                  </div>
-               </li>
-               <li>
-                  <div class="cover-bottom">
-                     <p>阿超最强女主播开团</p>
-                  </div>
-                  <div class="cover-all">
-                     <p>贪玩蓝月</p>
-                     <p>一刀999级，不删档内测</p>
-                     <span>立即下载</span>
-                  </div>
-               </li>
-               <li>
-                  <div class="cover-bottom">
-                     <p>阿超最强女主播开团</p>
-                  </div>
-                  <div class="cover-all">
-                     <p>贪玩蓝月</p>
-                     <p>一刀999级，不删档内测</p>
-                     <span>立即下载</span>
-                  </div>
-               </li>
-               <li>
-                  <div class="cover-bottom">
-                     <p>阿超最强女主播开团</p>
-                  </div>
-                  <div class="cover-all">
-                     <p>贪玩蓝月</p>
-                     <p>一刀999级，不删档内测</p>
-                     <span>立即下载</span>
-                  </div>
-               </li>
-               <li>
-                  <div class="cover-bottom">
-                     <p>阿超最强女主播开团</p>
-                  </div>
-                  <div class="cover-all">
-                     <p>贪玩蓝月</p>
-                     <p>一刀999级，不删档内测</p>
-                     <span>立即下载</span>
-                  </div>
-               </li>
-               <li>
-                  <div class="cover-bottom">
-                     <p>阿超最强女主播开团</p>
+                     <p>{{item.elementName}}</p>
                   </div>
                   <div class="cover-all">
                      <p>贪玩蓝月</p>

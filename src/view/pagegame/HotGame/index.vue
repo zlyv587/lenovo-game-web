@@ -8,66 +8,26 @@
                <div class="clear"></div>
             </div>
             <ul>
-               <li>
+               <li v-for="item in hotGameList" :style="{backgroundImage:`url( ${item.poster} )`}">
                   <div class="cover-bottom">
-                     <p>阿超最强女主播开团</p>
+                     <p>{{item.elementName}}</p>
                   </div>
                   <div class="cover-all">
-                     <p>贪玩蓝月</p>
-                     <p>一刀999级，不删档内测</p>
+                     <p>{{item.elementName}}</p>
+                     <p>{{item.gameElement.albumTitle}}</p>
                      <span>立即下载</span>
                   </div>
                </li>
-               <li>
-                  <div class="cover-bottom">
-                     <p>阿超最强女主播开团</p>
-                  </div>
-                  <div class="cover-all">
-                     <p>贪玩蓝月</p>
-                     <p>一刀999级，不删档内测</p>
-                     <span>立即下载</span>
-                  </div>
-               </li>
-               <li>
-                  <div class="cover-bottom">
-                     <p>阿超最强女主播开团</p>
-                  </div>
-                  <div class="cover-all">
-                     <p>贪玩蓝月</p>
-                     <p>一刀999级，不删档内测</p>
-                     <span>立即下载</span>
-                  </div>
-               </li>
-               <li>
-                  <div class="cover-bottom">
-                     <p>阿超最强女主播开团</p>
-                  </div>
-                  <div class="cover-all">
-                     <p>贪玩蓝月</p>
-                     <p>一刀999级，不删档内测</p>
-                     <span>立即下载</span>
-                  </div>
-               </li>
-               <li>
-                  <div class="cover-bottom">
-                     <p>阿超最强女主播开团</p>
-                  </div>
-                  <div class="cover-all">
-                     <p>贪玩蓝月</p>
-                     <p>一刀999级，不删档内测</p>
-                     <span>立即下载</span>
-                  </div>
-               </li>
-               <li>
-                  <div class="cover-bottom">
-                     <p>阿超最强女主播开团</p>
-                  </div>
-                  <div class="cover-all">
-                     <p>贪玩蓝月</p>
-                     <p>一刀999级，不删档内测</p>
-                     <span>立即下载</span>
-                  </div>
-               </li>
+               <!--<li>-->
+                  <!--<div class="cover-bottom">-->
+                     <!--<p>阿超最强女主播开团</p>-->
+                  <!--</div>-->
+                  <!--<div class="cover-all">-->
+                     <!--<p>贪玩蓝月</p>-->
+                     <!--<p>一刀999级，不删档内测</p>-->
+                     <!--<span>立即下载</span>-->
+                  <!--</div>-->
+               <!--</li>-->
             </ul>
          </div>
          <div class="right-part">
@@ -76,46 +36,16 @@
                <i class="border"></i>
             </div>
             <ul>
-               <li>
-                  <p>贪玩蓝月</p>
-                  <p>40区</p>
-                  <p>已开服</p>
+               <li v-for="item in hotGameRanking">
+                  <p>{{item.elementName}}</p>
+                  <p>{{item.title}}</p>
+                  <p>{{item.subTitle}}</p>
                </li>
-               <li>
-                  <p>贪玩蓝月</p>
-                  <p>40区</p>
-                  <p class="blue">已开服</p>
-               </li>
-               <li>
-                  <p>贪玩蓝月</p>
-                  <p>40区</p>
-                  <p>已开服</p>
-               </li>
-               <li>
-                  <p>贪玩蓝月</p>
-                  <p>40区</p>
-                  <p>已开服</p>
-               </li>
-               <li>
-                  <p>贪玩蓝月</p>
-                  <p>40区</p>
-                  <p>已开服</p>
-               </li>
-               <li class="blue">
-                  <p>贪玩蓝月</p>
-                  <p>40区</p>
-                  <p>18:00</p>
-               </li>
-               <li class="blue">
-                  <p>贪玩蓝月</p>
-                  <p>40区</p>
-                  <p>18:00</p>
-               </li>
-               <li>
-                  <p>贪玩蓝月</p>
-                  <p>40区</p>
-                  <p>18:00</p>
-               </li>
+               <!--<li>-->
+                  <!--<p>贪玩蓝月</p>-->
+                  <!--<p>40区</p>-->
+                  <!--<p class="blue">已开服</p>-->
+               <!--</li>-->
             </ul>
          </div>
          <div class="clear"></div>

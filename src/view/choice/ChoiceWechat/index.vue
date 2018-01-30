@@ -8,7 +8,7 @@
                <div class="clear"></div>
             </div>
             <ul>
-               <li v-for="item in gameList" :style="{backgroundImage:`url( ${item.poster} )`}">
+               <li v-for="item in webGameList" :style="{backgroundImage:`url( ${item.poster} )`}">
                   <div class="cover-bottom">
                      <p>{{item.elementName}}</p>
                   </div>
@@ -36,62 +36,62 @@
                <i class="border"></i>
             </div>
             <ul>
-               <li>
-                  <i>1</i>
-                  <b></b>
-                  <p>贪玩蓝月</p>
+               <li v-for="(item,index) in webGameRanking">
+                  <i>{{index+1}}</i>
+                  <b :style="{backgroundImage:`url( ${item.poster} )`}"></b>
+                  <p>{{item.elementName}}</p>
                   <span>立即下载</span>
-                  <p>90万人在玩</p>
+                  <p>{{item.title}}</p>
                </li>
-               <li>
-                  <i>2</i>
-                  <b></b>
-                  <p>贪玩蓝月</p>
-                  <span>立即下载</span>
-                  <p>90万人在玩</p>
-               </li>
-               <li>
-                  <i>3</i>
-                  <b></b>
-                  <p>贪玩蓝月</p>
-                  <span>立即下载</span>
-                  <p>90万人在玩</p>
-               </li>
-               <li>
-                  <i>4</i>
-                  <b></b>
-                  <p>贪玩蓝月</p>
-                  <span>立即下载</span>
-                  <p>90万人在玩</p>
-               </li>
-               <li>
-                  <i>5</i>
-                  <b></b>
-                  <p>贪玩蓝月</p>
-                  <span>立即下载</span>
-                  <p>90万人在玩</p>
-               </li>
-               <li>
-                  <i>6</i>
-                  <b></b>
-                  <p>贪玩蓝月</p>
-                  <span>立即下载</span>
-                  <p>90万人在玩</p>
-               </li>
-               <li>
-                  <i>7</i>
-                  <b></b>
-                  <p>贪玩蓝月</p>
-                  <span>立即下载</span>
-                  <p>90万人在玩</p>
-               </li>
-               <li>
-                  <i>8</i>
-                  <b></b>
-                  <p>贪玩蓝月</p>
-                  <span>立即下载</span>
-                  <p>90万人在玩</p>
-               </li>
+               <!--<li>-->
+                  <!--<i>2</i>-->
+                  <!--<b></b>-->
+                  <!--<p>贪玩蓝月</p>-->
+                  <!--<span>立即下载</span>-->
+                  <!--<p>90万人在玩</p>-->
+               <!--</li>-->
+               <!--<li>-->
+                  <!--<i>3</i>-->
+                  <!--<b></b>-->
+                  <!--<p>贪玩蓝月</p>-->
+                  <!--<span>立即下载</span>-->
+                  <!--<p>90万人在玩</p>-->
+               <!--</li>-->
+               <!--<li>-->
+                  <!--<i>4</i>-->
+                  <!--<b></b>-->
+                  <!--<p>贪玩蓝月</p>-->
+                  <!--<span>立即下载</span>-->
+                  <!--<p>90万人在玩</p>-->
+               <!--</li>-->
+               <!--<li>-->
+                  <!--<i>5</i>-->
+                  <!--<b></b>-->
+                  <!--<p>贪玩蓝月</p>-->
+                  <!--<span>立即下载</span>-->
+                  <!--<p>90万人在玩</p>-->
+               <!--</li>-->
+               <!--<li>-->
+                  <!--<i>6</i>-->
+                  <!--<b></b>-->
+                  <!--<p>贪玩蓝月</p>-->
+                  <!--<span>立即下载</span>-->
+                  <!--<p>90万人在玩</p>-->
+               <!--</li>-->
+               <!--<li>-->
+                  <!--<i>7</i>-->
+                  <!--<b></b>-->
+                  <!--<p>贪玩蓝月</p>-->
+                  <!--<span>立即下载</span>-->
+                  <!--<p>90万人在玩</p>-->
+               <!--</li>-->
+               <!--<li>-->
+                  <!--<i>8</i>-->
+                  <!--<b></b>-->
+                  <!--<p>贪玩蓝月</p>-->
+                  <!--<span>立即下载</span>-->
+                  <!--<p>90万人在玩</p>-->
+               <!--</li>-->
             </ul>
          </div>
          <div class="clear"></div>

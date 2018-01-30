@@ -8,15 +8,15 @@
                <div class="clear"></div>
             </div>
             <ul>
-               <li v-for="item in mobileList">
-                  <div></div>
+               <li v-for="item in mobileGameList">
+                  <div :style="{backgroundImage:`url( ${item.poster} )`}"></div>
                   <div>
-                     <h2>{{item.name}}</h2>
-                     <p>{{item.txt}}</p>
+                     <h2>{{item.elementName}}</h2>
+                     <p>{{item.title}}</p>
                   </div>
                   <div  class="cover-all">
-                     <p>{{item.name}}</p>
-                     <span>{{item.isa}}</span>
+                     <p>{{item.elementName}}</p>
+                     <span>安装</span>
                   </div>
                </li>
                <!--<li>-->
@@ -38,48 +38,20 @@
                <i class="border"></i>
             </div>
             <ul>
-               <li v-for="item in mobileList">
-                  <i>1</i>
-                  <b></b>
-                  <p>{{item.name}}</p>
+               <li v-for="(item,index) in mobileGameRanking">
+                  <i>{{index+1}}</i>
+                  <b :style="{backgroundImage:`url( ${item.poster} )`}"></b>
+                  <p>{{item.elementName}}</p>
                   <span>立即下载</span>
-                  <p>90万人在玩</p>
+                  <p>{{item.title}}</p>
                </li>
-               <li>
-                  <i>2</i>
-                  <b></b>
-                  <p>贪玩蓝月</p>
-                  <span>立即下载</span>
-                  <p>90万人在玩</p>
-               </li>
-               <li>
-                  <i>3</i>
-                  <b></b>
-                  <p>贪玩蓝月</p>
-                  <span>立即下载</span>
-                  <p>90万人在玩</p>
-               </li>
-               <li>
-                  <i>4</i>
-                  <b></b>
-                  <p>贪玩蓝月</p>
-                  <span>立即下载</span>
-                  <p>90万人在玩</p>
-               </li>
-               <li>
-                  <i>5</i>
-                  <b></b>
-                  <p>贪玩蓝月</p>
-                  <span>立即下载</span>
-                  <p>90万人在玩</p>
-               </li>
-               <li>
-                  <i>6</i>
-                  <b></b>
-                  <p>贪玩蓝月</p>
-                  <span>立即下载</span>
-                  <p>90万人在玩</p>
-               </li>
+               <!--<li>-->
+                  <!--<i>2</i>-->
+                  <!--<b></b>-->
+                  <!--<p>贪玩蓝月</p>-->
+                  <!--<span>立即下载</span>-->
+                  <!--<p>90万人在玩</p>-->
+               <!--</li>-->
             </ul>
          </div>
          <div class="clear"></div>

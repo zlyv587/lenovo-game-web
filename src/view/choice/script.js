@@ -10,31 +10,22 @@ export default {
     name:"appChoice",
     data () {
         return {
-            styleObject: {
-                marginBottom:'20px',
-                width:'100%',
-
-            },
             titleList: [
                 {'id':94,'name':'网游'},
                 {'id':95,'name':'微端'},
                 ],
-            gameList:[],
-            mobileList:[
-                {
-                    name:'魔兽世界',
-                    txt:'开局一把刀刀刀',
-                    isa:'安装'
-                },{
-                    name:'魔兽世界',
-                    txt:'开局一把刀刀刀',
-                    isa:'安装'
-                },{
-                    name:'魔兽世界',
-                    txt:'开局一把刀刀刀',
-                    isa:'安装'
-                }
-            ],
+            // 网游列表排行
+            webGameList:[],
+            webGameRanking:[],
+            // 手游列表排行
+            mobileGameList:[],
+            mobileGameRanking:[],
+            // 热门游戏列表开服时间
+            hotGameList:[],
+            hotGameRanking:[],
+            // 角色扮演游戏列表排行
+            rpgList:[],
+            rpgRanking:[],
             banners:[
                 {
                     url:'http://smtv-cms.oss-cn-beijing.aliyuncs.com/cms/2018-01-25/201801251416138731366.png',
@@ -87,10 +78,25 @@ export default {
         getGameLists () {
             // 接口地址在serviceUrl里
             getAwardDetail.getAwardDetail(93).then((res) => {
-                console.log(res.data)
-                console.log(this.titleList)
-            this.gameList = res.data.channels[0].modules[2].elements
-            console.log(this.gameList)
+                console.log(res.data);
+            this.webGameList = res.data.channels[0].modules[2].elements;
+            console.log(this.webGameList);
+            this.webGameRanking = res.data.channels[0].modules[6].elements;
+            console.log(this.webGameRanking);
+            this.mobileGameList = res.data.channels[0].modules[5].elements;
+            console.log(this.mobileGameList);
+            this.mobileGameRanking = res.data.channels[0].modules[8].elements;
+            console.log(this.mobileGameRanking);
+            // banners:[
+            //     {
+            //         url:'http://smtv-cms.oss-cn-beijing.aliyuncs.com/cms/2018-01-25/201801251416138731366.png',
+            //         isInstall:true,
+            //         gameTitle:'测试',
+            //         gameIntroduce:'测试',
+            //         bannerTitle:'测试',
+            //         bannerIntroduce:'测试'
+            //     },
+            //     ]
             })
         }
     },

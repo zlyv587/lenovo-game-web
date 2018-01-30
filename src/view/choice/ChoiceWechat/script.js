@@ -14,7 +14,7 @@ export default {
         // this.getRegional()
         // this.getLists()
     },
-    props: ['options','gameList'],
+    props: ['options','webGameList','webGameRanking'],
     computed: {
 
     },

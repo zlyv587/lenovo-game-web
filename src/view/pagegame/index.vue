@@ -2,9 +2,9 @@
     <div id="appChoice">
         <v-header></v-header>
         <!--<v-swiper :style="styleObject"></v-swiper>-->
-        <v-hotGame></v-hotGame>
-        <v-typeGame></v-typeGame>
-        <v-typeGame></v-typeGame>
+        <v-hotGame :hotGameList="hotGameList" :hotGameRanking="hotGameRanking"></v-hotGame>
+        <!--<v-typeGame v-for="game in titleList" :options="game"  :key = "game.id" :webGameList="webGameList" :webGameRanking="webGameRanking"></v-typeGame>-->
+        <v-typeGame :rpgList="rpgList"></v-typeGame>
     </div>
 
 </template>
