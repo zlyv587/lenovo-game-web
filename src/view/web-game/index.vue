@@ -2,97 +2,25 @@
 	<div class="webgame">
 		<!--<div class="tab">导航</div>-->
 		<Header></Header>
-		<div class="top-banner">
-			<img src="../../assets/top.png" alt="" />
-			<div class="download">
-				<h3>贪玩蓝月</h3>
-				<p>一刀九九九，不删档内测</p>
-				<p>火爆开启</p>
-				<div class="download-btn">立即下载<span class=""></span><span class="bulk">2GB</span></div>
-			</div>
-		</div>
-		<div class="mid-banner">
-			
-		</div>
+        <vswiper :banners="banners" flag="1"></vswiper>
+        <vswiper :banners="banners" flag="4"></vswiper>
+        div
 		<div class="recommend">
 			<div class="title">
 				<div class="line"></div>
 				<h3>热门推荐</h3>
-				<p>查看更多</p>
+				<p @click="seeMore()">查看更多</p>
 			</div>
 			<div class="list">
-				<div class="item">
-					<img src="../../assets/rec1.png" alt="" />
+				<div class="item" v-for="(item,index) in recommends" :key="item.elementId">
+					<img :src="item.poster" alt="" />
 					<div class="intro">
-						<h3>贪玩蓝月</h3>
-						<p>一刀999一刀999一刀999一刀999一刀快来加入快来加入好的</p>
-						<div><span class="num num-hot">1</span><span>下载次数</span><span class="count">999999999</span></div>
+						<h3>{{item.elementName}}</h3>
+						<p>{{item.gameElement.albumTitle}}</p>
+						<div><span class="num num-hot">{{index+1}}</span><span>下载次数</span><span class="count">999999999</span></div>
 					</div>
 				</div>
-				<div class="item">
-					<img src="../../assets/rec1.png" alt="" />
-					<div class="intro">
-						<h3>贪玩蓝月</h3>
-						<p>一刀999一刀999一刀999一刀999一刀快来加入快来加入好的</p>
-						<div><span class="num num-hot">2</span>下载次数<span class="count">999999999</span></div>
-					</div>
-				</div>
-				<div class="item">
-					<img src="../../assets/rec1.png" alt="" />
-					<div class="intro">
-						<h3>贪玩蓝月</h3>
-						<p>一刀999一刀999一刀999一刀999一刀快来加入快来加入好的</p>
-						<div><span class="num num-hot">3</span>下载次数<span class="count">999999999</span></div>
-					</div>
-				</div>
-				<div class="item">
-					<img src="../../assets/rec1.png" alt="" />
-					<div class="intro">
-						<h3>贪玩蓝月</h3>
-						<p>一刀999一刀999一刀999一刀999一刀快来加入快来加入好的</p>
-						<div><span class="num">4</span>下载次数<span class="count">999999999</span></div>
-					</div>
-				</div>
-				<div class="item">
-					<img src="../../assets/rec1.png" alt="" />
-					<div class="intro">
-						<h3>贪玩蓝月</h3>
-						<p>一刀999一刀999一刀999一刀999一刀快来加入快来加入好的</p>
-						<div><span class="num">5</span>下载次数<span class="count">999999999</span></div>
-					</div>
-				</div>
-				<div class="item">
-					<img src="../../assets/rec1.png" alt="" />
-					<div class="intro">
-						<h3>贪玩蓝月</h3>
-						<p>一刀999一刀999一刀999一刀999一刀快来加入快来加入好的</p>
-						<div><span class="num">6</span>下载次数<span class="count">999999999</span></div>
-					</div>
-				</div>
-				<div class="item">
-					<img src="../../assets/rec1.png" alt="" />
-					<div class="intro">
-						<h3>贪玩蓝月</h3>
-						<p>一刀999一刀999一刀999一刀999一刀快来加入快来加入好的</p>
-						<div><span class="num">7</span>下载次数<span class="count">999999999</span></div>
-					</div>
-				</div>
-				<div class="item">
-					<img src="../../assets/rec1.png" alt="" />
-					<div class="intro">
-						<h3>贪玩蓝月</h3>
-						<p>一刀999一刀999一刀999一刀999一刀快来加入快来加入好的</p>
-						<div><span class="num">8</span>下载次数<span class="count">999999999</span></div>
-					</div>
-				</div>
-				<div class="item">
-					<img src="../../assets/rec1.png" alt="" />
-					<div class="intro">
-						<h3>贪玩蓝月</h3>
-						<p>一刀999一刀999一刀999一刀999一刀快来加入快来加入好的</p>
-						<div><span class="num">9</span>下载次数<span class="count">999999999</span></div>
-					</div>
-				</div>
+
 			</div>
 		</div>
 	</div>

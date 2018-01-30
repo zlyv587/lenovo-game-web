@@ -1,7 +1,6 @@
 <template>
 	<div class="recommend">
-		<div class="back">
-			<返回</div>
+		<div class="back"><返回</div>
 				<ul class="family">
 					<li>
 						<a href="javascript:void">全部(1000)</a>
@@ -120,8 +119,8 @@
                     <p class="sum">共45条</p>
                     <p class="paginal">10条/页</p>
                     <div class="paging">
-                        <el-pagination layout="prev, pager, next" :total="50">
-                        </el-pagination>
+                        <!--<el-pagination layout="prev, pager, next" :total="50">
+                        </el-pagination>-->
                     </div>
                 </div>
 		</div>
