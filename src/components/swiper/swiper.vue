@@ -2,7 +2,8 @@
    精选+网游 1（有游戏信息介绍）
    页游  2
    游戏内页 3
-   游戏广告（四张图一起轮播 有图片信息介绍） 4
+   游戏广告（四张图一起轮播 有图片信息介绍） 4 精选中的banner广告
+   游戏广告（四张图一起轮播 有图片信息介绍） 5 网游中的banner广告
  <!--
     用法：
         1.导入组件 import swiper from '../../components/swiper/swiper';
@@ -41,7 +42,7 @@
         <div class="swiper-container gallery-top swiper-container-horizontal swiper-container-wp8-horizontal" v-if="flag== 3">
             <div class="swiper-wrapper">
                 <!-- <div  v-for="(banner,i) in banners" :key="i" class="swiper-slide swiper-slide-active" :style="{background:twoSwiper(banner)}"></div>-->
-                <div v-for="banner in banners" class="swiper-slide swiper-slide-active" :style="{background:twoSwiper(banner.url)}"></div>
+                <div v-for="item in detailImages" class="swiper-slide swiper-slide-active" :style="{background:twoSwiper(item)}"></div>
             </div>
             <!-- Add Arrows -->
             <div class="swiper-pagination"></div>
@@ -51,7 +52,7 @@
         <div class="swiper-container gallery-thumbs swiper-container-horizontal swiper-container-wp8-horizontal" v-if="flag==3">
             <div class="swiper-wrapper">
                 <!-- <div  v-for="(banner,i) in banners" :key="i" class="swiper-slide swiper-slide-active" :style="{background:twoSwiper(banner)}"></div>-->
-                <div v-for="banner in banners" class="swiper-slide swiper-slide-active" :style="{background:twoSwiper(banner.url)}"></div>
+                <div v-for="item in detailImages" class="swiper-slide swiper-slide-active" :style="{background:twoSwiper(item)}"></div>
             </div>
         </div>
         <!--three 精选和网游-->
@@ -85,16 +86,28 @@
         </div>
         <!--four 四张图一起轮播 游戏广告-->
         <div class='my-banner'>
-            <div class="swiper-container" v-if="flag == 4">
-                <div class="swiper-wrapper">
-                    <div v-for="banner in banners"  class="swiper-slide">
+        <div class="swiper-container gameBanner" v-if="flag == 4">
+            <div class="swiper-wrapper">
+                <div v-for="banner in banners"  class="swiper-slide">
+                    <img :src="banner.url" alt="" style='display:block'>
+                    <div class='banner-introduce'>阿强最强女王者</div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev" v-if="flag==4"></div>
+        <div class="swiper-button-next" v-if="flag==4"></div>
+    </div>
+        <div class='my-banner'>
+            <div class="swiper-container gameBanner" v-if="flag == 5">
+                <div class="swiper-wrapper" style="margin-top:20px">
+                    <div v-for="banner in banners"  class="swiper-slide" style="margin-left:0.01rem">
                         <img :src="banner.url" alt="" style='display:block'>
                         <div class='banner-introduce'>阿强最强女王者</div>
                     </div>
                 </div>
             </div>
-            <div class="swiper-button-prev" v-if="flag==4"></div>
-            <div class="swiper-button-next" v-if="flag==4"></div>
+            <div class="swiper-button-prev " v-if="flag==5" style="top:3.5rem;margin-right:2rem"></div>
+            <div class="swiper-button-next" v-if="flag==5" style="top:3.5rem"></div>
         </div>
 
     </div>

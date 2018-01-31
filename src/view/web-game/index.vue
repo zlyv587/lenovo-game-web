@@ -3,7 +3,7 @@
 		<!--<div class="tab">导航</div>-->
 		<Header></Header>
         <vswiper :banners="banners" flag="1"></vswiper>
-        <vswiper :banners="banners" flag="4"></vswiper>
+        <vswiper :banners="banners" flag="5"></vswiper>
         div
 		<div class="recommend">
 			<div class="title">
