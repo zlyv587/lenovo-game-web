@@ -1,3 +1,4 @@
+
 @import "../../common/base.less";
 @import "../../../static/css/swiper.min.css";
 .swiper{
@@ -34,7 +35,6 @@
 }
 .gallery-top {
   .px2rem(width, 700);
-
   .px2rem(height, 206)!important;
 
 }
@@ -63,10 +63,14 @@
   .px2rem(width, 962);
   float:left;
   .game-introduce{
+    .px2rem(font-size, 12);
     .px2rem(width, 282);
     .px2rem(height, 208);
     float:right;
     background:#4b433e;
+    .swiper-button-next{
+      .px2rem(right, 26);
+    }
     p{
       color:#fff;
       text-align:center;
@@ -74,9 +78,10 @@
     .game-title{
       .px2rem(font-size, 16);
       .px2rem(margin-top, 55);
-    }
-    .game-introduce{
-      .px2rem(font-size, 12);
+      img{
+        .px2rem(width, 20);
+        .px2rem(height, 20);
+      }
     }
     .download-button{
       margin:0 auto;
@@ -98,26 +103,32 @@
     .swiper-pagination{
       .px2rem(left, 110);
     }
+   .swiper-button-prev{
+     .px2rem(left, 10);
+   }
   }
 }
 .my-banner{
+  .px2rem(width, 902)!important;
+  .px2rem(margin-left, 32);
   .swiper-wrapper{
-    .px2rem(width, 917);
+    .px2rem(width, 902);
     .px2rem(height, 187);
   }
   .swiper-slide{
     .px2rem(height, 187);
+    .px2rem(width, 217);
 
   }
   .swiper-button-prev{
-    .px2rem(top, 80);
-    .px2rem(left, 170);
+    .px2rem(top, 1050);
+  //  .px2rem(left, 36);
     right:auto;
 
   }
   .swiper-button-next{
-    .px2rem(right, 200);
-    .px2rem(top, 80);
+ //   .px2rem(right, 36);
+    .px2rem(top, 1050);
     left:auto
   }
   img{
@@ -134,8 +145,3 @@
     .px2rem(height, 46);
   }
 }
-
-
-
-
-

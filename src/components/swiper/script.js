@@ -1,3 +1,4 @@
+
 /**
  * Created by Lzhang on 2017/12/11.
  */
@@ -5,7 +6,7 @@ import Swiper from '../../../static/js/swiper.min.js'
 import axios from 'axios'
 export default {
     name: 'swiper',
-    props:["banners","flag","isInstall"],
+    props:["banners","flag","isInstall","detailImages"],
     data() {
     return {
         // isInstall:true
@@ -76,7 +77,7 @@ methods: {
                     clickable: true
                 },
                 autoplay: {
-                    stopOnLastSlide: true,
+                    //stopOnLastSlide: true,
                     delay: 2000,
                     disableOnInteraction: false,
                 },
@@ -87,21 +88,21 @@ methods: {
                 },
             })
         }else{
-            this.swiper = new Swiper('.swiper-container', {
+            var gameBanner=new Swiper('.gameBanner',{
                 autoplay: {
-                    stopOnLastSlide: true,
                     delay: 8000,
-                    disableOnInteraction: false,
+                  // disableOnInteraction: false,
                 },
-                loop: true,
+                    loop : true,
+                    //loopFillGroupWithBlank: true,
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
                 },
                 slidesPerView:4,
                 slidesPerGroup : 4,
-
-            })
+            });
+           // setInterval("gameBanner.slideNext()", 8000);
         }
     })
 
@@ -114,10 +115,3 @@ created() {
     this.getBanners()
 }
 }
-
-
-
-
-
-
-
