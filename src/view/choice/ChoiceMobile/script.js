@@ -9,7 +9,7 @@ export default {
 
         }
     },
-    props:['mobileGameList','mobileGameRanking'],
+    props:['mobileGame'],
     computed: {
 
     },
@@ -19,6 +19,8 @@ export default {
 
     },
     methods: {
-
+        seeMore(){
+            this.$router.push({ path: '../../recommend', params: {}})
+        }
     },
 }

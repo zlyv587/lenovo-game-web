@@ -8,7 +8,7 @@ export default {
             msg: 'Welcome to Your Vue.js App'
         }
     },
-    props:['rpgList'],
+    props:['options','hotGame'],
     computed: {
 
     },
@@ -18,6 +18,8 @@ export default {
 
     },
     methods: {
-
+        seeMore(){
+            this.$router.push({ path: '../../recommend', params: {}})
+        }
     },
 }

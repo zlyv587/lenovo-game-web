@@ -3,12 +3,12 @@
          <div class="left-part">
             <div class="banner">
                <i></i>
-               <p>{{ options.name }}</p>
-               <p>查看更多</p>
+               <p>{{ options.title }}</p>
+               <p @click="seeMore()">查看更多</p>
                <div class="clear"></div>
             </div>
             <ul>
-               <li v-for="item in webGameList" :style="{backgroundImage:`url( ${item.poster} )`}">
+               <li v-for="item in options.list" :style="{backgroundImage:`url( ${item.poster} )`}">
                   <div class="cover-bottom">
                      <p>{{item.elementName}}</p>
                   </div>
@@ -18,80 +18,21 @@
                      <span>立即下载</span>
                   </div>
                </li>
-               <!--<li>-->
-                  <!--<div class="cover-bottom">-->
-                     <!--<p>阿超最强女主播开团</p>-->
-                  <!--</div>-->
-                  <!--<div class="cover-all">-->
-                     <!--<p>贪玩蓝月</p>-->
-                     <!--<p>一刀999级，不删档内测</p>-->
-                     <!--<span>立即下载</span>-->
-                  <!--</div>-->
-               <!--</li>-->
             </ul>
          </div>
          <div class="right-part">
             <div>
-               <p>游戏下载排行</p>
+               <p>{{ options.rankTitle }}</p>
                <i class="border"></i>
             </div>
             <ul>
-               <li v-for="(item,index) in webGameRanking">
+               <li v-for="(item,index) in options.rank">
                   <i>{{index+1}}</i>
                   <b :style="{backgroundImage:`url( ${item.poster} )`}"></b>
                   <p>{{item.elementName}}</p>
                   <span>立即下载</span>
                   <p>{{item.title}}</p>
                </li>
-               <!--<li>-->
-                  <!--<i>2</i>-->
-                  <!--<b></b>-->
-                  <!--<p>贪玩蓝月</p>-->
-                  <!--<span>立即下载</span>-->
-                  <!--<p>90万人在玩</p>-->
-               <!--</li>-->
-               <!--<li>-->
-                  <!--<i>3</i>-->
-                  <!--<b></b>-->
-                  <!--<p>贪玩蓝月</p>-->
-                  <!--<span>立即下载</span>-->
-                  <!--<p>90万人在玩</p>-->
-               <!--</li>-->
-               <!--<li>-->
-                  <!--<i>4</i>-->
-                  <!--<b></b>-->
-                  <!--<p>贪玩蓝月</p>-->
-                  <!--<span>立即下载</span>-->
-                  <!--<p>90万人在玩</p>-->
-               <!--</li>-->
-               <!--<li>-->
-                  <!--<i>5</i>-->
-                  <!--<b></b>-->
-                  <!--<p>贪玩蓝月</p>-->
-                  <!--<span>立即下载</span>-->
-                  <!--<p>90万人在玩</p>-->
-               <!--</li>-->
-               <!--<li>-->
-                  <!--<i>6</i>-->
-                  <!--<b></b>-->
-                  <!--<p>贪玩蓝月</p>-->
-                  <!--<span>立即下载</span>-->
-                  <!--<p>90万人在玩</p>-->
-               <!--</li>-->
-               <!--<li>-->
-                  <!--<i>7</i>-->
-                  <!--<b></b>-->
-                  <!--<p>贪玩蓝月</p>-->
-                  <!--<span>立即下载</span>-->
-                  <!--<p>90万人在玩</p>-->
-               <!--</li>-->
-               <!--<li>-->
-                  <!--<i>8</i>-->
-                  <!--<b></b>-->
-                  <!--<p>贪玩蓝月</p>-->
-                  <!--<span>立即下载</span>-->
-                  <!--<p>90万人在玩</p>-->
-               <!--</li>-->
             </ul>
          </div>
          <div class="clear"></div>

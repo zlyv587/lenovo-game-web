@@ -8,22 +8,16 @@ export default {
 
         }
     },
-    created () {
-        // this.newdata()
-        // this.getEdition()
-        // this.getRegional()
-        // this.getLists()
-    },
-    props: ['options','webGameList','webGameRanking'],
+    props: ['options'],
     computed: {
 
     },
     mounted() {
-       // // this.home.changeCount();
-       //  this.changeCount()
-       // this.getTitleLists();
+
     },
     methods: {
-
+        seeMore(){
+            this.$router.push({ path: '../../recommend', params: {}})
+        }
     },
 }
