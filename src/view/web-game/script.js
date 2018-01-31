@@ -1,14 +1,13 @@
 /**
  * Created by Lzhang on 2017/12/11.
  */
-import swiper from "../../components/swiper/swiper.vue"
 import getAwardDetail from '@/api/award/award-add'
-
+import gamebanner from "./gamebanner/index.vue"
+import recbanner from "./recbanner/index.vue"
 export default {
     data () {
         return {
-            banner:[],
-            banners:[
+            gamebanners:[
                 {
                     url:'http://smtv-cms.oss-cn-beijing.aliyuncs.com/cms/2018-01-25/201801251416138731366.png',
                     isInstall:'',
@@ -41,6 +40,7 @@ export default {
                     bannerTitle:'',
                     bannerIntroduce:''
                 }],
+            recbanners:[],
             recommends:[]
         }
     },
@@ -55,14 +55,13 @@ export default {
     methods: {
         getWebGames() {
               getAwardDetail.getAwardDetail(94).then((res) => {
-
-                  // this.banner=res.data.channels[0].modules[1].elements;
-                  // this.banners[0].url=this.banner[0].poster;
-                  // this.banners[1].url=this.banner[1].poster;
-                  // this.banners[2].url=this.banner[2].poster;
-                  // this.banners[3].url=this.banner[3].poster;
+                  this.recbanners=res.data.channels[0].modules[2].elements;
+                  // this.gamebanners[0].url=this.banner[0].poster;
+                  // this.gamebanners[1].url=this.banner[1].poster;
+                  // this.gamebanners[2].url=this.banner[2].poster;
+                  // this.gamebanners[3].url=this.banner[3].poster;
                   // console.log(res.data.channels[0].modules[2]);
-                  this.recommends=res.data.channels[0].modules[2].elements.slice(0,8);
+                  // this.recommends=res.data.channels[0].modules[2].elements.slice(0,8);
               })
         },
         seeMore(){
@@ -70,6 +69,7 @@ export default {
         }
     },
     components:{
-        'vswiper':swiper
+        'gamebanner':gamebanner,
+        'recbanner':recbanner
     }
 }

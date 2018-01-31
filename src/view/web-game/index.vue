@@ -2,9 +2,8 @@
 	<div class="webgame">
 		<!--<div class="tab">导航</div>-->
 		<Header></Header>
-        <vswiper :banners="banners" flag="1"></vswiper>
-        <vswiper :banners="banners" flag="5"></vswiper>
-        div
+        <gamebanner></gamebanner>
+        <recbanner></recbanner>
 		<div class="recommend">
 			<div class="title">
 				<div class="line"></div>
