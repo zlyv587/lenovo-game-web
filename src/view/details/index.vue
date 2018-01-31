@@ -4,14 +4,17 @@
 <template>
     <div class="content">
         <div class="banner">
+            <div class="goback">
+                &lt;返回
+            </div>
             <div class="carousel">
                 <swiper :flag="flag" :isInstall="isInstall" :detailImages="detailImages"></swiper>
             </div>
             <div class="carousel_info">
                 <div class="game-title">
                     <img src="../../assets/carousel_icon.jpg">
-                    <span>英雄联盟</span>
-                    <!--<span>{{result.gameName}}}</span>-->
+                    <!--<span>英雄联盟</span>-->
+                    <span>{{result.gameName}}</span>
                 </div>
                 <div class="game-introduce-wrap">
                     <div class="game-introduce">

@@ -88,7 +88,7 @@
         <div class='my-banner'>
         <div class="swiper-container gameBanner" v-if="flag == 4">
             <div class="swiper-wrapper">
-                <div v-for="banner in banners"  class="swiper-slide">
+                <div v-for="banner in banners" class="swiper-slide">
                     <img :src="banner.url" alt="" style='display:block'>
                     <div class='banner-introduce'>阿强最强女王者</div>
                 </div>

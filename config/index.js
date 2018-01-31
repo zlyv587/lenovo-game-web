@@ -46,6 +46,10 @@ module.exports = {
                 target:'http://gameapi.test.epg.lenovo.com.cn',
                 changeOrigin: true,
             },
+            '/detail/name':{
+                target:'http://gameapi.test.epg.lenovo.com.cn',
+                changeOrigin: true,
+            },
             //http://gameapi.test.epg.lenovo.com.cn/indexChannel/93?relativeId=46
             // '/iworld': {
             //     target: 'http://221.181.100.150:18090',

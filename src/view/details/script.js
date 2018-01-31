@@ -3,19 +3,15 @@
  * Created by Lzhang on 2017/12/11.
  */
 import swiper from '../../components/swiper/swiper'
-//import getAwardDetail from '@/api/detail'
-//console.log(getAwardDetail, '====================');
+import getAwardDetail from '@/api/detail'
+console.log(getAwardDetail, '====================');
 export default {
     components:{swiper},
     // props:['gameId','relativeId','isInstall'],
     data () {
     return {
         msg: 'Welcome to Your Vue.js App',
-        result:{
-            detailInfo:'',
-            url:'http://www.baidu.com',
-            captureFiles:['11','22'],
-        },
+        result:{},
         detailImages:[
             "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516175526231&di=6a5d1f0640377b8629781beac4178fb7&imgtype=0&src=http%3A%2F%2Fb.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F0ff41bd5ad6eddc4583f4c0a38dbb6fd53663362.jpg",
             "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516175526231&di=5c0e74d1fa712ed7f41f7a7c9d98101f&imgtype=0&src=http%3A%2F%2Fl.paipaitxt.com%2F118851%2F13%2F08%2F19%2F104_15780822_ab4b4e6cd89dd4f.jpg",
@@ -52,20 +48,14 @@ mounted() {
 },
 methods:{
     getInfo(){
-        //this.$axios.request({
-        //     url:'/detail/name/5&relativeId=46',
-        //     method:'GET',
-        //     params:{
-        //      gameId:gameId,
-        //      relativeId:relativeId
-        //    }
-        //}).then(res=>{
-        //    if(res.data.code==0){
-        //     this.result=res.data;
-        //   detailImages.push(result.captureFiles)
-        //}
-        //})
-      //  const res = await getAwardDetail.getAwardDetail(5).catch(()=> {})
+            getAwardDetail.getAwardDetail(5).then((res) => {
+                console.log(res.data,'result');
+               this.result=res.data.data;
+               console.log(this.result,'------123')
+               console.log(res.data.data.gameName,'111')
+
+
+        });
 
     },
 //   download(result.downLoadUrl){
